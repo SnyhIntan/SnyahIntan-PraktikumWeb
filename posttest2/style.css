@@ -1,0 +1,485 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    /* background-image: url(""); gak jadi pake, gambarnya pecah */
+    background-size: cover;
+}
+
+.card {
+    width: 800px;
+    background-color: white;
+}
+
+.header-container {  
+    margin: 0 auto;
+    background-color: #1a1a1a;
+    overflow: hidden; 
+}
+
+.garis {
+    width: 250%; 
+    height: 20px;
+    background: repeating-linear-gradient(
+        135deg,
+        #ffcc00,
+        #ffcc00 10px,
+        transparent 10px,
+        transparent 20px
+    );
+}
+
+.rounded-image {
+    width: px; 
+    height: 100px; 
+    border-radius: 100%; 
+    object-fit: cover; 
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    background-color: #2b2b2b;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+    margin-top: 3%;
+}
+
+.p1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 0;
+}
+
+.summary {
+    background-color: #222;
+    padding: 50px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    border: px solid #333;
+}
+
+.pemesanan {
+    background-color: #222;
+    padding: 50px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    border: px solid #333;
+}
+
+.zigzag {
+    position: relative;
+    height: 40px;
+    background-color: #1a1a1a;
+    clip-path: polygon(0 0, 5% 100%, 10% 0, 15% 100%, 20% 0, 25% 100%, 30% 0, 35% 100%, 40% 0, 45% 100%, 50% 0, 
+                       55% 100%, 60% 0, 65% 100%, 70% 0, 75% 100%, 80% 0, 85% 100%, 90% 0, 95% 100%, 100% 0);
+}
+
+.order-summary {
+    background-color: white;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.order-summary h2, .order-summary p {
+    margin: 0px 0px 10px;
+}
+
+.date-input {
+    width: 100%;
+    padding: 5px 1px;
+    border: 1px solid #ddd;
+    border-radius: 60px;
+    background-color: #222;
+    color: white;
+    font-size: 16px;
+    outline: none;
+}
+
+.p2 {
+    margin-top: 10px;
+    text-align: center;
+    color: #111;
+}
+
+.order-items {
+    margin-bottom: 10px;
+}
+
+.order-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    background-color: #2a2a2a;
+    border-radius: 15px;
+    border: 1px solid #333;
+    padding: 10px 30px;
+}
+
+.order-item img {
+    width: 80px;
+    height: 80px;
+    margin-right: 15px;
+    border-radius: 5px;
+    border: 1px solid #ffcc00;
+}
+
+.order-item .item-details {
+    flex-grow: 1;
+}
+
+.item-details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.order-item h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.order-item p {
+    font-size: 14px;
+}
+
+.order-item .item-price {
+    font-weight: bold;
+    color: #ffcc00;
+    font-size: 18px;
+}
+
+.quantity {
+    width: 60px;
+    text-align: center;
+    padding: 5px;
+    font-size: 13px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+
+h1 {
+    font-size: 26px;
+    color: #ffcc00;
+    text-align: center;
+    align-items: center;
+}
+
+h2 {
+    font-size: 22px;
+    color:black;
+    text-align: center;}
+
+h3 {
+    font-size: 18px;
+    color: #ffcc00;
+}
+
+h1,h2, h3 {
+    font-family: 'Arial Black', sans-serif;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+.p3 {
+    margin-top: 10px;
+    color: #111;
+}
+
+.total {
+    font-weight: bold;
+    font-size: 1.4em;
+    text-align: right;
+    margin-top: 20px;
+    color: #ffcc00;
+}
+
+.pembayaran {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #333;
+    color: #111;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.pembayaran button {
+    background-color: #ffcc00;
+    color: #111;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-info button {
+    background-color: #ffcc00;
+    color: #111;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.share {
+    color: #222020;
+}
+
+.zigzag-divider {
+    position: relative;
+    height: 40px;
+    background-color: #1a1a1a;
+    clip-path: polygon(0  100%, 5% 0, 10% 100%, 15% 0, 20% 100%, 25% 0, 30% 100%, 35% 0, 40% 100%, 45% 0, 50% 100%, 
+                       55% 0, 60% 100%, 65% 0, 70% 100%, 75% 0, 80% 100%, 85% 0, 90% 100%, 95% 0, 100% 100%);
+}
+
+.referral {
+    background-color: wheat;
+    padding: 20px;
+    border-radius: px;
+    margin-bottom: 20px;
+    text-align: center;
+    border: 0px solid #333;
+}
+
+.referral .link {
+    background-color: #ffcc00;
+    color: #111;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.footer {
+    background-color:  #1a1a1a;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #333;
+}
+
+.footer a {
+    color: #ffcc00;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    gap: 20px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .card {
+        width: 600px;
+      }
+      .header-container {
+        margin: 0 auto;
+      }
+      .button-container {
+        margin-top: 1%;
+      }
+      .summary, .pemesanan {
+        padding: 50px;
+      }
+      .order-summary {
+        padding: 50px;
+      }
+      .date-input {
+        width: 90%;
+        font-size: 15px;
+      }
+      .order-item {
+        padding: 20px 30px;
+      }
+      .quantity {
+        width: 50px;
+        text-align: center;
+        font-size: 15px;
+      }
+      .pembayaran {
+        padding: 10px;
+        margin-bottom: 5px;
+      }
+      .contact-info {
+        gap: 5px;
+      }
+      .referral {
+        padding: 10px;
+        margin-bottom: 10px;
+      }
+      .footer {
+        padding: 10px;
+      }
+      .order-item .item-price {
+          font-size: 19px;
+      }
+      .total {
+          font-weight: bold;
+          font-size: 25px;
+      }
+      h1 {
+          font-size: 30px;
+        }
+      h2 {
+          font-size: 27px;
+      }
+      h3 {
+          font-size: 25px;
+      }
+      .order-item h3 {
+          font-size: 20px;
+      }
+      p{
+          font-size: 16px;
+      }
+      .p3 {
+        font-size: 19px;
+    }
+      .zigzag {
+          height: 20px; 
+          clip-path: polygon(0 0, 5% 100%, 10% 0, 15% 100%, 20% 0, 25% 100%, 30% 0, 35% 100%, 40% 0, 45% 100%, 50% 0, 
+                             55% 100%, 60% 0, 65% 100%, 70% 0, 75% 100%, 80% 0, 85% 100%, 90% 0, 95% 100%, 100% 0);
+      }
+      .zigzag-divider {
+          height: 20px; 
+          clip-path: polygon(0  100%, 5% 0, 10% 100%, 15% 0, 20% 100%, 25% 0, 30% 100%, 35% 0, 40% 100%, 45% 0, 50% 100%, 
+                             55% 0, 60% 100%, 65% 0, 70% 100%, 75% 0, 80% 100%, 85% 0, 90% 100%, 95% 0, 100% 100%);
+      }
+  }
+  
+  /* Mobile */
+  @media (max-width: 767px) {
+    .card {
+      width: 100%;
+    }
+    .header-container {
+      margin: 0 auto;
+    }
+    .button-container {
+      margin-top: 1%;
+    }
+    .summary, .pemesanan {
+      padding: 10px;
+    }
+    .order-summary {
+      padding: 5px;
+    }
+    .date-input {
+      width: 80%;
+      font-size: 11px;
+    }
+    .order-item {
+      padding: 3px 15px;
+    }
+    .quantity {
+      width: 30px;
+      text-align: center;
+      font-size: 11px;
+    }
+    .pembayaran {
+      padding: 10px;
+      margin-bottom: 5px;
+    }
+    .contact-info {
+      gap: 5px;
+    }
+    .referral {
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    .footer {
+      padding: 10px;
+    }
+    .order-item .item-price {
+        font-size: 13px;
+    }
+    .total {
+        font-weight: bold;
+        font-size: 17px;
+    }
+    h1 {
+        font-size: 18px;
+      }
+    h2 {
+        font-size: 16px;
+    }
+    h3 {
+        font-size: 12px;
+    }
+    .order-item h3 {
+        font-size: 12px;
+    }
+    p{
+        font-size: 12px;
+    }
+    .zigzag {
+        height: 20px; 
+        clip-path: polygon(0 0, 5% 100%, 10% 0, 15% 100%, 20% 0, 25% 100%, 30% 0, 35% 100%, 40% 0, 45% 100%, 50% 0, 
+                           55% 100%, 60% 0, 65% 100%, 70% 0, 75% 100%, 80% 0, 85% 100%, 90% 0, 95% 100%, 100% 0);
+    }
+    .zigzag-divider {
+        height: 20px; 
+        clip-path: polygon(0  100%, 5% 0, 10% 100%, 15% 0, 20% 100%, 25% 0, 30% 100%, 35% 0, 40% 100%, 45% 0, 50% 100%, 
+                           55% 0, 60% 100%, 65% 0, 70% 100%, 75% 0, 80% 100%, 85% 0, 90% 100%, 95% 0, 100% 100%);
+    }
+  }
+  
+
+
+/* Tablets and small desktops */
+@media (max-width: 1200px) and (min-width: 768px) {
+    .card {
+        width: 100%;
+    }
+
+    .pembayaran, .contact-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .order-item {
+        display: flex;
+        align-items: center;
+    }
+}
+
