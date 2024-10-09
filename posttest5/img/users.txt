@@ -1,3 +1,0 @@
-Nama,Email,Usia,Password
-John Doe,johndoe@example.com,25,1234
-Jane Doe,janedoe@example.com,30,password
